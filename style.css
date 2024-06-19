@@ -12,11 +12,20 @@ body{
     width: 50%;
     margin:5% auto;
     background-color: white;
-    padding: 32px;
     border-radius: 15px;
 }
+.description{
+    padding: 0 32px 32px 32px;
+}
+.image{
+    padding: 32px;
+    padding-bottom: 0;
+}
 img{
+    width: 100%;
+    object-fit: contain;
     border-radius: 15px;
+    
 }
 h1{
     font-family: 'Young Serif';
@@ -48,7 +57,7 @@ h2{
     font-family: 'Young Serif';
     font-weight: 500;
 }
-.Ingredients,.Instructions,td{
+.Ingredients,.Instructions{
     border-bottom: 1px solid rgba(128, 128, 128, 0.295);
 }
 .Ingredients ul li::marker, .Instructions ol li::marker,td:nth-child(even){
@@ -57,10 +66,25 @@ h2{
 .Ingredients ul, .Instructions ol{
     padding-left: 26px;
 }
-
 table{
-    width:100% ;
+    width: 100%;
+}
+.row{
+    border-bottom: 3px solid black;
 }
 td{
     padding: 10px 15px;
+}
+
+@media screen and (max-width:600px)  {
+    .main-div{
+        width: 100%;
+        margin: 0;
+    }
+    .image{
+        padding: 0;
+    }
+    img{
+        border-radius: 0;
+    }
 }
